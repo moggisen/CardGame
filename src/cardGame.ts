@@ -39,3 +39,4 @@ export function drawCard(): card {
     const rank = ranks[Math.floor(Math.random() * ranks.length)];
     return {suit, rank};
 };
+
