@@ -8,6 +8,7 @@ const app = document.querySelector<HTMLDivElement>('#app')!;
 // Draw a card
 const card = drawCard();
 
+//Initial State
 let gameState: GameState = "waiting";
 
 //Start game
