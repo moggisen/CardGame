@@ -34,9 +34,11 @@ body {
 
 .red {
   color: red;
+  border-color: #ff3636;
 }
 .black {
   color: black;
+  border-color: #333;
 }
 
 button {
@@ -44,4 +46,12 @@ button {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
+}
+
+#app {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;           /* textfärg */
+  text-align: center;     /* centrera texten */
 }
