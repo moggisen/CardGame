@@ -22,6 +22,26 @@ export enum Rank {
     King = "K",
 };
 
+// Hjälpfunktion för rank-värde
+export function getRankValue(rank: Rank): number {
+    switch(rank) {
+        case Rank.Ace: return 14;   // högst
+        case Rank.King: return 13;
+        case Rank.Queen: return 12;
+        case Rank.Jack: return 11;
+        case Rank.Ten: return 10;
+        case Rank.Nine: return 9;
+        case Rank.Eight: return 8;
+        case Rank.Seven: return 7;
+        case Rank.Six: return 6;
+        case Rank.Five: return 5;
+        case Rank.Four: return 4;
+        case Rank.Three: return 3;
+        case Rank.Two: return 2;    // lägst
+        default: return 0;
+    }
+}
+
 // Literal type for game state 
 export type GameState = "waiting" | "playing" | "ended";
 
