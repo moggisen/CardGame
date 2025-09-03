@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#hand {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 90px;
+  margin: 5px;
+  border-radius: 8px;
+  border: 2px solid #333;
+  background-color: white;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: default;
+  user-select: none;
+}
+
+.red {
+  color: red;
+  border-color: #ff3636;
+}
+.black {
+  color: black;
+  border-color: #333;
+}
+
+button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#app {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;           /* textfärg */
+  text-align: center;     /* centrera texten */
+}
