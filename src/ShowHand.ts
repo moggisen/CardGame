@@ -1,8 +1,8 @@
 // Import types and enums from cardGame.ts
 
-import { card } from "./cardGame";
+import { drawCard } from "./cardGame";
 
-export function showHand(hand: card[], container: HTMLElement): void {
+export function showHand(hand: drawCard[], container: HTMLElement): void {
   container.innerHTML = hand
     .map(
       (c) =>
