@@ -26,7 +26,7 @@ export enum Rank {
 export type GameState = "waiting" | "playing" | "ended";
 
 // Card Type
-export type card = {
+export interface card {
     suit: Suit;
     rank: Rank;
 };
