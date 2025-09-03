@@ -1,4 +1,4 @@
-//Enums for Suit and Rank
+//Enums for Suit and Rank (Unicode icon)
 export enum Suit {
     Hearts = "&hearts;",
     Diamonds = "&diams;",
