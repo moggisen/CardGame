@@ -1,6 +1,7 @@
 import type {  card } from "./cardGame";
 import { drawCard} from "./cardGame";
 import { showHand } from "./ShowHand";
+import './style.css';
 
 // Hämta HTML-element med typer
 const app = document.getElementById("app") as HTMLDivElement;
