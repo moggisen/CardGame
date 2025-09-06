@@ -16,7 +16,7 @@ Samma kodidé kan användas för andra slump baserade projekt, till exempel tär
 # B) Vanliga fel och felsökning
 
 ## 1. Fel: Typen importeras felaktigt
-```
+```ts
 import { card } from "./cardGame";
 // Error: "card is a type and must be imported using a type-only import"
 ```
@@ -24,7 +24,7 @@ Förklaring: TypeScript skiljer på typer och värden.
 Lösning: import type { card } from "./cardGame";
 
 ## 2. Fel: Försöker ändra på null element
-```
+```ts
 const handDiv = document.getElementById("hand") as HTMLDivElement;
 handDiv.innerHTML = "Hej";
 // Uncaught TypeError: Cannot set properties of null
@@ -33,7 +33,7 @@ Förklaring: Elementet #hand finns inte i HTML.
 Lösning: Kontrollera att HTML-filen har rätt id: <div id="hand"></div>
 
 ## 3. Fel: Saknar let eller const när man deklarerar
-```
+```ts
 hand.push(drawCard());
 // Error: Cannot find name 'hand'.
 ```
@@ -43,7 +43,7 @@ Lösning:const hand: card[] = [];
 ## 4. Fel: Räknar fler än maxkort
 Om man inte stoppar dragningen, fortsätter programmet utan begränsning.
 Lösning: Kontroll med if: 
-```
+```ts
 if (hand.length >= MAX_CARDS) {
   drawButton.disabled = true;
   return;
