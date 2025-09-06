@@ -16,31 +16,39 @@ Samma kodidé kan användas för andra slump baserade projekt, till exempel tär
 # B) Vanliga fel och felsökning
 
 ## 1. Fel: Typen importeras felaktigt
+```
 import { card } from "./cardGame";
 // Error: "card is a type and must be imported using a type-only import"
+```
 Förklaring: TypeScript skiljer på typer och värden.
 Lösning: import type { card } from "./cardGame";
 
 ## 2. Fel: Försöker ändra på null element
+```
 const handDiv = document.getElementById("hand") as HTMLDivElement;
 handDiv.innerHTML = "Hej";
 // Uncaught TypeError: Cannot set properties of null
+```
 Förklaring: Elementet #hand finns inte i HTML.
 Lösning: Kontrollera att HTML-filen har rätt id: <div id="hand"></div>
 
 ## 3. Fel: Saknar let eller const när man deklarerar
+```
 hand.push(drawCard());
 // Error: Cannot find name 'hand'.
+```
 Förklaring: Variabeln hand är inte deklarerad innan användning.
 Lösning:const hand: card[] = [];
 
 ## 4. Fel: Räknar fler än maxkort
 Om man inte stoppar dragningen, fortsätter programmet utan begränsning.
 Lösning: Kontroll med if: 
+```
 if (hand.length >= MAX_CARDS) {
   drawButton.disabled = true;
   return;
 }
+```
 
 # C)Vårt program
 Vi har gjort ett enkelt kortspels-program. Programmet låter dig dra kort från en kortlek och visa dem på skärmen. Du kan dra max 5 kort – sedan stoppas spelet. Hjärter och ruter visas i rött, medan spader och klöver visas i svart.
@@ -52,18 +60,18 @@ Type (GameState) används för att begränsa spelets tillstånd till endast "wai
 
 Instruktioner för att köra programmet
 Börja med att klona ner projektet från GitHub (eller skapa lokalt med Vite + TypeScript):
-´´´
+```
 git clone https://github.com/moggisen/CardGame.git
-´´´
-´´´
+```
+```
 cd cardgame-1
-´´´
-´´´
+```
+```
  npm install
-´´´
-´´´
+```
+```
 npm run dev
-´´´
+```
 
 4.  Öppna länken som visas i terminalen
 Nu ska du kunna:
