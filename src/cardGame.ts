@@ -1,9 +1,9 @@
 //Enums for Suit and Rank
 export enum Suit {
-    Hearts = "&hearts;",
-    Diamonds = "&diams;",
-    Spades = "&spades;",
-    Clubs = "&clubs;",
+    Hearts = "♥",
+    Diamonds = "♦",
+    Clubs = "♣",
+    Spades = "♠"
 };
 
 export enum Rank {
