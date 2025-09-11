@@ -84,3 +84,14 @@ Se din hand växa tills du når 5 kort (därefter inaktiveras knappen).
 # D) Övningauppgift 
 I denna övningsuppgift vill vi att du skapar en uträkningsfunktion av dem tidigare dragna korten och samlar dem i ett resultat t.ex. (Du har ett par av Hjärter 2, Två Ess, etc).
 
+### Tips för att komma igång med uppgiften:
+
+Fundera på hur du kan räkna hur många gånger varje kortvalör (t.ex. "K", "7", "A") förekommer i handen. Det kan hjälpa dig att förstå om spelaren har ett par, triss eller kanske fyrtal.
+
+En funktion som går igenom handen och "samlar ihop" rankerna i ett objekt eller en lista kan vara bra att börja med.
+
+När du har antalet, använd if-satser eller liknande logik för att avgöra om det finns fyra lika, tre lika och två lika — och i vilka kombinationer.
+
+### Tänk på att utgå från kortens "rank" (värde) snarare än "suit" (färg) när du ska identifiera händer som par och triss.
+
+### Extra: Om du vill, kan du försöka hitta det högsta kortet också, t.ex. "High card: Kung i hjärter" när inga kombinationer hittas.
