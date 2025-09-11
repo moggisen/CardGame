@@ -82,7 +82,7 @@ Klicka på knappen Draw a card för att dra ett nytt kort.
 Se din hand växa tills du når 5 kort (därefter inaktiveras knappen).
 
 # D) Övningauppgift 
-I denna övningsuppgift vill vi att du skapar en uträkningsfunktion av dem tidigare dragna korten och samlar dem i ett resultat t.ex. (Du har ett par av Hjärter 2, Två Ess, etc).
+I denna övningsuppgift vill vi att du skapar en uträkningsfunktion för de tidigare dragna korten och samlar resultatet i en beskrivning, t.ex. "Du har ett par i hjärter 2", "Två ess", osv.
 
 ### Tips för att komma igång med uppgiften:
 
